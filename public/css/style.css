@@ -1,0 +1,11 @@
+.removeIcon {
+  height: 15px;
+  cursor: pointer;
+  float: right;
+}
+
+.index {
+  font-size: 12px;
+  vertical-align: middle;
+  font-weight: bold;
+}

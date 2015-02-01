@@ -1,0 +1,19 @@
+<h1>My 2dos</h1>
+<table class="table table-striped">
+  <tr ng-repeat="todo in todos track by $index">
+    <td class="index">{{$index + 1}}.</td>
+    <td>{{todo}}</td>
+    <td><img src="images/remove.png" class="removeIcon" ng-click="removeTodo($index)" title="remove" />
+    </td>
+  </tr>
+</table>
+
+<form ng-submit="submit()" name="myform" novalidate class="form-inline">
+  <div class="form-group">
+    <input type="text" ng-model="input" required class="form-control">
+  </div>
+  <div class="form-group">
+    <input value="add" type="submit" ng-disabled="myform.$invalid" class="form-control">
+  </div>
+
+</form>
